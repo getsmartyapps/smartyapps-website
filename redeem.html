@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redeem LeadHunterAI</title>
+
+<link rel="icon" href="favicon.ico">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0b1220;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:650px;
+    margin:70px auto;
+    background:#131c2d;
+    padding:40px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,.35);
+}
+
+.logo{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+p{
+    color:#c9d2df;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+input{
+    width:100%;
+    padding:16px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    margin-top:15px;
+    background:#22c55e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#16a34a;
+}
+
+#success{
+    display:none;
+    margin-top:35px;
+    padding:25px;
+    border-radius:12px;
+    background:#163323;
+}
+
+.download{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.download:hover{
+    background:#1d4ed8;
+}
+
+.footer{
+    margin-top:30px;
+    color:#9ca3af;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">🔷</div>
+
+<h1>Redeem LeadHunterAI</h1>
+
+<p>
+Enter your details and AppSumo redemption code to access your download.
+</p>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="AppSumo Redemption Code">
+
+<button onclick="redeem()">Redeem</button>
+
+<div id="success">
+
+<h2>✅ Redemption Successful</h2>
+
+<p>
+Thank you for choosing LeadHunterAI.
+</p>
+
+<a class="download"
+href="#"
+target="_blank">
+
+Download LeadHunterAI v1.0
+
+</a>
+
+<p class="footer">
+
+After downloading, extract the ZIP file, read the included documentation, and launch LeadHunterAI. You'll need your own SerpApi API key to begin searching.
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function redeem(){
+
+document.getElementById("success").style.display="block";
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
